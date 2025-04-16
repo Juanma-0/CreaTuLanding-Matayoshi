@@ -1,10 +1,11 @@
 import React from "react";
 import CartWidget from "./CartWidget";
 
-function NavBar() {
+function NavBar({ children }) {
 return (
     <nav>
-    <h1>Mi Ecommerce</h1>
+    <h1>Mi Ecommerce de bebidas</h1>
+    {children}
     <CartWidget />
     </nav>
 );
