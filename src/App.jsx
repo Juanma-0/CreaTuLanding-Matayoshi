@@ -6,19 +6,24 @@ import Menu from "./components/Menu";
 import CategoryPage from "./components/CategoryPage";
 import ItemDetail from "./components/ItemDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
+
+
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <NavBar />
-        <Menu />
-        <Routes>
-          <Route path="/" element={<ItemListContainer message="Bienvenido!" />} />
-          <Route path="/:categoria" element={<CategoryPage />} />
-          <Route path="/item/:id" element={<ItemDetail />} />
-        </Routes>
-      </div>
+      <CartProvider> {}
+        <div>
+          <NavBar />
+          <Menu />
+          <Routes>
+            <Route path="/" element={<ItemListContainer message="Bienvenido!" />} />
+            <Route path="/:categoria" element={<CategoryPage />} />
+            <Route path="/item/:id" element={<ItemDetail />} />
+          </Routes>
+        </div>
+      </CartProvider>
     </BrowserRouter>
   );
 }

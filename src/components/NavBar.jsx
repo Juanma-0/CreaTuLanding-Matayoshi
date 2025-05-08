@@ -1,5 +1,7 @@
 import React from "react";
 import CartWidget from "./CartWidget";
+import "../App.css";
+
 
 function NavBar({ children }) {
 return (
