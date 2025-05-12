@@ -1,0 +1,23 @@
+ul {
+list-style: none; 
+padding: 0;       
+margin: 0;        
+display: flex;    
+gap: 15px;        
+}
+
+ul li {
+color: #f0f8ff;         
+background-color: #506378; 
+padding: 8px 15px;      
+border-radius: 8px;     
+}
+
+ul li a {
+color: inherit;        
+text-decoration: none; 
+}
+
+ul li a:hover {
+color: #a8dadc;      
+}

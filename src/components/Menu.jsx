@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
-
+import "./Menu.css";
 
 function Menu() {
 return (
