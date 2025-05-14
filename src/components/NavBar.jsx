@@ -1,10 +1,9 @@
-// src/assets/components/NavBar.jsx
 import React from "react";
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 import "../App.css";
-import "./NavBar.css"; // Crea este archivo para estilos específicos
-import cartIcon from '../assets/carrito-imagen.png'; // Importa tu imagen del carrito
+import "./NavBar.css";
+import cartIcon from '../assets/carrito-imagen.png';
 
 function NavBar() {
     return (
@@ -16,7 +15,7 @@ function NavBar() {
                 <Link to="/cart" className="cart-button">
                     <img src={cartIcon} alt="Carrito" className="cart-icon" />
                 </Link>
-                <CartWidget /> {}
+                <CartWidget />
             </div>
         </nav>
     );

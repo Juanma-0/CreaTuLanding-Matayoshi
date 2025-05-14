@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { CartContext } from '../context/CartContext';
-import '../index.css'; // Importa estilos globales si los necesitas
-import './ItemCard.css'; // Crea este archivo para estilos específicos
+import { CartContext } from './CartContext';
+import '../index.css';
+import './ItemCard.css';
 
 function ItemCard({ item }) {
     const [quantity, setQuantity] = useState(1);
@@ -20,28 +20,25 @@ function ItemCard({ item }) {
 
     const handleAddToCart = () => {
         addToCart(item, quantity);
-        alert(`"${item.nombre}" (x${quantity}) ha sido agregado al carrito.`);
+        alert(`"${item.tittle}" (x${quantity}) ha sido agregado al carrito.`);
     };
 
-    return (
-        <div className="item-card">
-            <Link to={`/item/${item.id}`}>
-                <img src={item.Image} alt={item.nombre} className="item-image-card" />
-                <div className="item-details-card">
-                    <h3>{item.nombre}</h3>
-                    <p>Precio: ${item.precio}</p>
-                </div>
-            </Link>
-            <div className="quantity-controls-card">
-                <button onClick={handleDecrement}>-</button>
-                <span>{quantity}</span>
-                <button onClick={handleIncrement}>+</button>
-            </div>
-            <button onClick={handleAddToCart} className="add-to-cart-button-card">
-                Agregar
-            </button>
+return (
+    <div className="item-card">
+        <img src={item.image} alt={item.tittle} className="item-image-card" />
+        <div className="item-details-card">
+            <h3>{item.tittle}</h3>
+            <p>Precio: ${item.precio}</p>
         </div>
-    );
+        <div className="quantity-controls-card">
+            <button onClick={handleDecrement}>-</button>
+            <span>{quantity}</span>
+            <button onClick={handleIncrement}>+</button>
+        </div>
+        <button onClick={handleAddToCart} className="add-to-cart-button-card">
+            Agregar
+        </button>
+    </div>
+);
 }
-
 export default ItemCard;

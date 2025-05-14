@@ -2,27 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px; /* Más padding para un mejor espaciado interno */
-    border: 1px solid #ddd; /* Un borde más suave */
-    border-radius: 12px; /* Bordes más redondeados */
-    margin-bottom: 30px; /* Más margen inferior */
-    background-color: var(--background-light); /* Fondo claro para destacar */
+    padding: 30px; 
+    border: 1px solid #ddd; 
+    border-radius: 12px; 
+    margin-bottom: 30px; 
+    background-color: var(--background-light); 
     color: var(--text-dark);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombreado suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
 }
 
 .item-image {
-    max-width: 350px; /* Imagen un poco más grande */
+    max-width: 350px;
     height: auto;
     margin-bottom: 20px;
     border-radius: 8px;
 }
 
 .item-price {
-    font-size: 1.5em; /* Precio más grande */
+    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 15px;
-    color: var(--primary-color); /* Destacando el precio */
+    color: var(--primary-color);
 }
 
 .item-description {
