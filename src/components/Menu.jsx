@@ -6,10 +6,10 @@ import "./Menu.css";
 function Menu() {
     return (
         <ul className="menu">
-            <li><Link to="/cerveza">Cerveza</Link></li>
-            <li><Link to="/vodka">Vodka</Link></li>
-            <li><Link to="/ron">Ron</Link></li>
-            <li><Link to="/whisky">Whisky</Link></li>
+            <li><Link to="/Cerveza">Cerveza</Link></li>
+            <li><Link to="/Vodka">Vodka</Link></li>
+            <li><Link to="/Ron">Ron</Link></li>
+            <li><Link to="/Whisky">Whisky</Link></li>
         </ul>
     );
 }

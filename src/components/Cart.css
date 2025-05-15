@@ -14,7 +14,7 @@
 .cart-item {
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 30px;
     border-bottom: 1px solid #eee;
 }
 
@@ -41,7 +41,7 @@
 
 .cart-item-details p {
     margin-bottom: 3px;
-    color: #777;
+    color: #fcfcfc;
     font-size: 0.9em;
 }
 
@@ -101,7 +101,7 @@
 .checkout-form {
     margin-top: 20px;
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #555353;
     border-radius: 6px;
     background-color: #f9f9f9;
 }

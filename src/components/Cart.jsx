@@ -42,7 +42,7 @@ function Cart() {
 
     return (
         <div className="cart-container">
-            <h2>Carrito de Compras</h2>
+            <h2>Carrito de compras</h2>
             <ul className="cart-items">
                 {cart.map(item => (
                     <li key={item.id} className="cart-item">
