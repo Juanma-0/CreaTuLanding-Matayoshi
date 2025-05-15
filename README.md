@@ -1,4 +1,4 @@
-# Proyecto de bebidas
+# Proyecto de venta de bebidas
 
 Herramientas y tecnologías utilizadas:
 
