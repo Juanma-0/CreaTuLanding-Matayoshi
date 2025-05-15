@@ -1,12 +1,25 @@
-# React + Vite
+# Proyecto de bebidas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Herramientas y tecnologías utilizadas:
 
-Currently, two official plugins are available:
++ React + Vite
++ Firestore Database
++ React Router DOM
++ Context API
++ Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Guía de instalación
 
-## Expanding the ESLint configuration
+1. Instalar dependencias 
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+npm install
+```
+
+2. Levantar proyecto
+
+```shell script
+npm run dev
+```
+
+Link del deploy: [Deploy Vercel](https://crea-tu-landing-matayoshi.vercel.app/)
